@@ -1,3 +1,7 @@
-const {deterministicPartitionKey} = require("./dpk");
+const { deterministicPartitionKey } = require("./dpk");
 
-console.log(deterministicPartitionKey());
+const event = {
+  howdy: "hello!"
+}
+
+console.log(deterministicPartitionKey(event));
